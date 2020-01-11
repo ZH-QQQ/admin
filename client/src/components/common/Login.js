@@ -14,8 +14,8 @@ const users = [
     password: "admin"
   },
   {
-    username: "zysoft",
-    password: "zysoft"
+    username: "zh",
+    password: "zh"
   }
 ];
 
@@ -42,14 +42,14 @@ class NormalLoginForm extends Component {
           });
 
           setCookie("mspa_user", JSON.stringify(values));
-          message.success("login successed!"); //成功信息
+          message.success("登陆成功!"); //成功信息
           let that = this;
           setTimeout(function() {
             //延迟进入
             that.props.history.push({ pathname: "/app", state: values });
           }, 2000);
         } else {
-          message.error("login failed!"); //失败信息
+          message.error("登录失败!"); //失败信息
         }
       }
     });
