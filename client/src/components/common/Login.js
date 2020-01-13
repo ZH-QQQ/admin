@@ -68,7 +68,11 @@ class NormalLoginForm extends Component {
           <Form onSubmit={this.handleSubmit} style={{ maxWidth: "300px" }}>
             <FormItem>
               {getFieldDecorator("username", {
-                rules: [{ required: true, message: "请输入用户名!" }]
+                rules: [
+                  { required: true, message: "请输入用户名!" },
+                  { max: 6, message: "最大长度6个字符" },
+                  { min: 3, message: "最小长度3个字符" }
+                ]
               })(
                 <Input
                   prefix={<Icon type="user" style={{ fontSize: 13 }} />}
@@ -78,7 +82,11 @@ class NormalLoginForm extends Component {
             </FormItem>
             <FormItem>
               {getFieldDecorator("password", {
-                rules: [{ required: true, message: "请输入密码!" }]
+                rules: [
+                  { required: true, message: "请输入密码!" },
+                  { max: 6, message: "最大长度6个字符" },
+                  { min: 3, message: "最小长度3个字符" }
+                ]
               })(
                 <Input
                   prefix={<Icon type="lock" style={{ fontSize: 13 }} />}

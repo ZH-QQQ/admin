@@ -133,7 +133,7 @@ export default class MIndex extends Component {
       color: ["rgb(216, 151, 235)", "rgb(246, 152, 153)", "rgb(100, 234, 145)"],
       title: [
         {
-          text: "账单/亿",
+          text: "成员/人",
           left: "2%",
           top: "6%",
           textStyle: {
@@ -155,7 +155,7 @@ export default class MIndex extends Component {
         textStyle: {
           color: "gray"
         },
-        data: ["网购", "线下", "其他"]
+        data: ["初级工程师", "中级工程师", "高级工程师"]
       },
       xAxis: {
         type: "category",
@@ -168,7 +168,7 @@ export default class MIndex extends Component {
         axisLabel: {
           color: "gray"
         },
-        data: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"]
+        data: ["2014", "2015", "2016", "2017", "2018", "2019", "2020"]
       },
       yAxis: {
         min: 0,
@@ -185,7 +185,7 @@ export default class MIndex extends Component {
       },
       series: [
         {
-          name: "网购",
+          name: "初级工程师",
           smooth: true,
           type: "line",
           symbolSize: 8,
@@ -193,7 +193,7 @@ export default class MIndex extends Component {
           data: [10, 40, 32, 20, 80, 90, 97]
         },
         {
-          name: "线下",
+          name: "中级工程师",
           smooth: true,
           type: "line",
           symbolSize: 8,
@@ -201,7 +201,7 @@ export default class MIndex extends Component {
           data: [70, 50, 50, 87, 90, 80, 70]
         },
         {
-          name: "其他",
+          name: "高级工程师",
           smooth: true,
           type: "line",
           symbolSize: 8,
