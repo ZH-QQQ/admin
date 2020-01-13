@@ -14,8 +14,20 @@ const users = [
     password: "admin"
   },
   {
-    username: "zh",
-    password: "zh"
+    username: "zhang",
+    password: "zhang"
+  },
+  {
+    username: "ldx",
+    password: "ldx"
+  },
+  {
+    username: "zhou",
+    password: "zhou"
+  },
+  {
+    username: "qiu",
+    password: "qiu"
   }
 ];
 
