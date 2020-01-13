@@ -100,33 +100,33 @@ const data = [
 ];
 
 export default class MIndex extends Component {
-  CountUp() {
-    let imgSrc = ["mail", "chat", "cart", "heart"];
-    let imgName = ["Mails", "Dialogue", "Carts", "Collection"];
-    let count = ["1379", "768", "192", "413"];
-    let cu = imgSrc.map(function(item, index) {
-      return (
-        <Col md={6} key={item}>
-          <Card
-            style={{ cursor: "pointer", marginBottom: 16 }}
-            actions={[<Icon type="info-circle-o" />, <Icon type="ellipsis" />]}
-          >
-            <Meta
-              style={{ fontSize: 22 }}
-              avatar={
-                <img src={require("../../style/img/" + item + ".png")} alt="" />
-              }
-              title={imgName[index]}
-              description={
-                <CountUp start={0} end={count[index]} duration={2.75} />
-              }
-            />
-          </Card>
-        </Col>
-      );
-    });
-    return cu;
-  }
+  // CountUp() {
+  //   let imgSrc = ["mail", "chat", "cart", "heart"];
+  //   let imgName = ["Mails", "Dialogue", "Carts", "Collection"];
+  //   let count = ["1379", "768", "192", "413"];
+  //   let cu = imgSrc.map(function(item, index) {
+  //     return (
+  //       <Col md={6} key={item}>
+  //         <Card
+  //           style={{ cursor: "pointer", marginBottom: 16 }}
+  //           actions={[<Icon type="info-circle-o" />, <Icon type="ellipsis" />]}
+  //         >
+  //           <Meta
+  //             style={{ fontSize: 22 }}
+  //             avatar={
+  //               <img src={require("../../style/img/" + item + ".png")} alt="" />
+  //             }
+  //             title={imgName[index]}
+  //             description={
+  //               <CountUp start={0} end={count[index]} duration={2.75} />
+  //             }
+  //           />
+  //         </Card>
+  //       </Col>
+  //     );
+  //   });
+  //   return cu;
+  // }
   getOption() {
     let option = {
       backgroundColor: "#fff",
@@ -228,7 +228,7 @@ export default class MIndex extends Component {
       <div>
         <BreadcrumbCustom paths={["首页"]} />
         <div className="mindex">
-          <Row gutter={16}>{this.CountUp()}</Row>
+          {/* <Row gutter={16}>{this.CountUp()}</Row> */}
           <Row gutter={16}>
             <Col md={16}>
               <Card
